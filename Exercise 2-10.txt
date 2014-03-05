@@ -1,0 +1,15 @@
+Chapter 2, exercise 10:
+
+I would say that a superclass would be inappropriate in this case.
+True, a superclass would eliminate the need for the "name" property
+to be replicated across classes, but the only layer of abstraction
+that the classes have in common is a "Noun". Unless a much broader
+variety of nouns were to be introduced into the program beyond the
+ones listed, it would only complicate the design of the program. If
+a huge list of nouns were to be introduced, perhaps in some sort
+of dictionary application, then a Noun superclass could be in
+order, in which case it should be abstract. It is appropriate
+to have superclasses when classes share multiple similarities,
+the addition of a superclass would not needlessly complicate the
+program, and the amount of code reuse gained from it were at least
+somewhat significant.
